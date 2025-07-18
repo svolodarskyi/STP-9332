@@ -1,19 +1,15 @@
-/* Styles for Mobile devices */
+/* Base styles - Desktop first */
 .container {
-  min-width: 320px;
-  max-width: 375px;
+  width:100%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 80px;
 }
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
+
+/* Mobile styles - override for small screens */
+@media only screen and (max-width: 375px) {
   .container {
-    max-width: 768px;
-  }
-}
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
+    max-width: 320px;
+    padding: 0 16px;
   }
 }
