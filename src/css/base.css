@@ -13,9 +13,9 @@
 
 body {
   background-image: url('../img/img-desktop-dev/back-desctop1x.png');
-  background-repeat: repeat-y;
+  background-repeat: repeat;
   background-attachment: scroll;
-  background-size: auto;
+  background-size: cover;
   background-position: top center;
   height: 6000px;
 }

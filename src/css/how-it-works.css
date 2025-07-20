@@ -54,34 +54,15 @@
 
 .how-it-works-content {
   display: flex;
-  gap: 24px;
-}
-
-.how-it-works-text,
-.how-it-works-image {
-  flex: 1 1 50%;
-  max-width: 50%;
-  min-width: 0;
-}
-
-.how-it-works-content-image {
-  display: flex;
-  flex-direction: row;
-  row-gap: 16px;
-  column-gap: 25px;
+  row-gap: 48px;
+  column-gap: 24px;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.how-it-works-img {
-  box-shadow: 0 0 12px 0 var(--stroke-for-title);
-  border-radius: 24px;
-}
 .how-it-works-text {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  flex: 0 1 658px;
 }
 
 .how-it-works-subheader {
@@ -119,5 +100,71 @@
 .how-it-works-benefits-item svg {
   width: 22px;
   height: 22px;
-  flex-shrink: 0;
+  flex: 0 0 22px;
+}
+
+.image-showcase {
+  flex: 0 1 352px;
+  position: relative;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  margin-bottom: -80px;
+}
+
+.image-showcase .image-row {
+  display: flex;
+  gap: 15px;
+}
+
+.puzzle-piece {
+  position: absolute;
+  display: block;
+}
+
+.puzzle-img-1 {
+  left: -75px;
+  top: -16px;
+
+  border: 1px solid var(--text-color);
+  border-radius: 24px 0 0 0;
+  box-shadow: 0 0 12px 0 var(--stroke-for-title);
+}
+
+.puzzle-img-2 {
+  top: 0;
+  right: 0;
+  border: 1px solid var(--text-color);
+  border-radius: 0 24px 0 0;
+  box-shadow: 0 0 12px 0 var(--stroke-for-title);
+}
+
+.puzzle-img-3 {
+  bottom: 135px;
+  left: 20px;
+}
+
+.puzzle-img-4 {
+  bottom: 122px;
+  right: 0;
+  border: 1px solid var(--text-color);
+  border-radius: 0 0 24px 0;
+  box-shadow: 0 0 12px 0 var(--stroke-for-title);
+}
+
+.image-showcase img:hover {
+  transform: translateY(-5px);
+}
+
+.arrow-icon1 {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -125px;
+  top: 20px;
+}
+
+.arrow-icon2 {
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 80px;
+  right: 60px;
 }
