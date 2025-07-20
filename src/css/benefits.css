@@ -67,10 +67,19 @@
 
 .benefits-content {
   display: flex;
+  gap: 24px;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  padding: 0 20px;
+  max-width: 1200px;
+
+}
+
+.benefits-text,
+.benefits-images {
+  flex: 1 1 50%;
+  max-width: 50%;
+  min-width: 0;
 }
 
 .benefits-images {
@@ -81,14 +90,14 @@
 
 .main-img {
   position: absolute;
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba(255, 192, 255, 0.6);
+    border-radius: 100%;
+box-shadow: 0 0 12px 0 var(--stroke-color);
   transition: transform 0.3s ease;
-  top: 0;
-  left: 50%;
-  width: 180px;
+  top: -65px;
+  left: 40%;
+  width: 320px;
   transform: translateX(-50%);
-  z-index: 3;
+  z-index: ;
 }
 
 .small-img {
@@ -97,9 +106,10 @@
   box-shadow: 0 0 15px rgba(255, 192, 255, 0.6);
   transition: transform 0.3s ease;
  bottom: 0;
-  left: 0;
-  width: 140px;
-  z-index: 2;
+ top: 20%;
+  right: 0;
+  width: 248px;
+  z-index: -1;
 }
 
 .smally-img {
@@ -108,48 +118,61 @@
   box-shadow: 0 0 15px rgba(255, 192, 255, 0.6);
   transition: transform 0.3s ease;
   bottom: 0;
-  right: 0;
-  width: 140px;
+  right: 35%;
+  width: 175px;
+  height: 166px;
   z-index: 2;
 }
+
+
 .benefit-img:hover {
   transform: scale(1.05);
 }
 
 .benefits-text {
-  max-width: 500px;
-  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .benefits-text h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #d100b7;
+  margin-bottom: 24px;
+  font-weight: 500;
+font-size: 32px;
+color:#420D6D;
 }
 
 .benefits-list {
-  list-style: none;
-  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color:#420D6D;
+
+  
 }
+.benefits-list-title {
+  font-weight: 500;
+font-size: 32px;
+color: #420D6D;
+	
+  
+
+}
+
 .benefits-list-item {
-  margin-bottom: 12px;
-  padding-left: 24px;
-  position: relative;
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.benefits-list li {
-  margin-bottom: 12px;
-  padding-left: 24px;
-  position: relative;
-  font-size: 18px;
-}
-
-.benefits-list li::before {
-  content: '★';
-  color: #ff7de6;
-  position: absolute;
-  left: 0;
+.ballet-icon-item {
+   width: 22px;
+  height: 22px;
+  flex-shrink: 0;
 }
 
 /* Mobile — 768px */
