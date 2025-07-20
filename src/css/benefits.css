@@ -1,19 +1,9 @@
 /* Desktop 1200px */
-
-
-
 .benefits {
- background-image: url('../img/img-desktop-dev/back-desktop2x.png');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  font-weight: 500;
+  font-family: var(--font-family);
   padding-top: 84px;
-  position: relative;
-  z-index: 1;
 }
-
-
-
 .section-title {
   --stroke-color: #c91ae8;
   --stroke-width: 2px;
@@ -70,9 +60,6 @@
   gap: 24px;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
-  max-width: 1200px;
-
 }
 
 .benefits-text,
@@ -83,21 +70,21 @@
 }
 
 .benefits-images {
-   position: relative;
+  position: relative;
   width: 360px;
   height: 360px;
 }
 
 .main-img {
   position: absolute;
-    border-radius: 100%;
-box-shadow: 0 0 12px 0 var(--stroke-color);
+  border-radius: 100%;
+  box-shadow: 0 0 12px 0 var(--stroke-color);
   transition: transform 0.3s ease;
   top: -65px;
   left: 40%;
   width: 320px;
   transform: translateX(-50%);
-  z-index: ;
+  z-index: 1;
 }
 
 .small-img {
@@ -105,8 +92,8 @@ box-shadow: 0 0 12px 0 var(--stroke-color);
   border-radius: 50%;
   box-shadow: 0 0 15px rgba(255, 192, 255, 0.6);
   transition: transform 0.3s ease;
- bottom: 0;
- top: 20%;
+  bottom: 0;
+  top: 20%;
   right: 0;
   width: 248px;
   z-index: -1;
@@ -124,7 +111,6 @@ box-shadow: 0 0 12px 0 var(--stroke-color);
   z-index: 2;
 }
 
-
 .benefit-img:hover {
   transform: scale(1.05);
 }
@@ -138,29 +124,21 @@ box-shadow: 0 0 12px 0 var(--stroke-color);
 
 .benefits-text h3 {
   margin-bottom: 24px;
-  font-weight: 500;
-font-size: 32px;
-color:#420D6D;
+  font-size: 32px;
+  color: #420d6d;
 }
 
 .benefits-list {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
-  font-family: var(--font-family);
-  font-weight: 500;
   font-size: 20px;
-  color:#420D6D;
-
-  
+  color: #420d6d;
 }
-.benefits-list-title {
-  font-weight: 500;
-font-size: 32px;
-color: #420D6D;
-	
-  
 
+.benefits-list-title {
+  font-size: 32px;
+  color: #420d6d;
 }
 
 .benefits-list-item {
@@ -170,7 +148,7 @@ color: #420D6D;
 }
 
 .ballet-icon-item {
-   width: 22px;
+  width: 22px;
   height: 22px;
   flex-shrink: 0;
 }

@@ -54,7 +54,8 @@
 
 .how-it-works-content {
   display: flex;
-  gap: 24px;
+  row-gap: 48px;
+  column-gap: 24px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
@@ -107,6 +108,7 @@
   position: relative;
   aspect-ratio: 1 / 1;
   margin: 0 auto;
+  margin-bottom: -80px;
 }
 
 .image-showcase .image-row {
@@ -116,6 +118,7 @@
 
 .puzzle-piece {
   position: absolute;
+  display: block;
 }
 
 .puzzle-img-1 {
