@@ -1,0 +1,196 @@
+.hero {
+  margin-bottom: 84px;
+}
+.header-stroke-text {
+  --stroke-color: #c91ae8;
+  --stroke-width: 4px;
+
+  font-family: var(--font-family);
+  margin-bottom: 56px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  color: #ffffff;
+  text-shadow: var(--stroke-width) 0 0 var(--stroke-color),
+    calc(var(--stroke-width) * -1) 0 0 var(--stroke-color),
+    0 var(--stroke-width) 0 var(--stroke-color),
+    0 calc(var(--stroke-width) * -1) 0 var(--stroke-color);
+}
+
+.smooth-16 {
+  text-shadow: calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * 0.3827) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * 0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * 0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0) calc(var(--stroke-width) * 1) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * 0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * 0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * 0.3827) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -1) calc(var(--stroke-width) * 0) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * -0.3827) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * -0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * -0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0) calc(var(--stroke-width) * -1) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * -0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * -0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * -0.3827) 0
+      var(--stroke-color);
+}
+
+.hero-content {
+  display: flex;
+  gap: 24px;
+}
+
+.hero-content-text,
+.hero-content-image {
+  flex: 1 1 50%;
+  max-width: 50%;
+  min-width: 0;
+}
+
+.hero-content-text {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-subheader {
+  margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--text-color);
+}
+
+.hero-description {
+  margin-bottom: 32px;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  max-width: 422px;
+  color: var(--text-color);
+}
+
+.hero-benefits-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-bottom: 48px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.hero-benefits-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-benefits-item svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.hero-content-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content-image {
+  position: relative;
+  width: 100%;
+  display: flex; /* or block – just for layout ease */
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; /* adjust as needed */
+}
+
+.hero-img {
+  position: absolute;
+  border-radius: 24px;
+  box-shadow: 0 0 11px 0 var(--stroke-for-title);
+}
+
+.hero-img-main {
+  z-index: 3;
+  width: 395px;
+}
+
+.hero-img-left {
+  z-index: 2;
+  width: 205px;
+  height: 326px;
+  left: 25px;
+  transform: rotate(-14deg);
+}
+
+.hero-img-right {
+  z-index: 2;
+  width: 205px;
+  height: 326px;
+  right: 60px;
+  transform: rotate(14deg);
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+  .hero-content-text,
+  .hero-content-image {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .hero-img-main {
+    margin-top: 40px;
+  }
+
+  .hero-img-left,
+  .hero-img-right {
+    display: none;
+  }
+  /* .hero-img-main {
+    max-width: 100%;
+    width: 100%;
+  } */
+}
+
+.hero-download-btn {
+  flex-basis: auto;
+  border: 1px solid #d8a323;
+  border-radius: 12px;
+  padding: 22.5px 28.4px;
+  max-width: 508px;
+  height: 68px;
+
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: clamp(14px, 1.8vw, 20px);
+  color: var(--text-color);
+
+  box-shadow: inset 0 2px 30px 0 rgba(215, 105, 37, 0.81);
+  background: #f7f450;
+}
