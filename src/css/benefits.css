@@ -97,7 +97,7 @@ box-shadow: 0 0 12px 0 var(--stroke-color);
   left: 40%;
   width: 320px;
   transform: translateX(-50%);
-  z-index: ;
+  z-index: index 0;
 }
 
 .small-img {
