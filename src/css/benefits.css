@@ -1,7 +1,5 @@
 /* Desktop 1200px */
-.body {
-  font-family: "Fredoka", "Quicksand", sans-serif;
-}
+
 
 
 .benefits {
@@ -9,25 +7,62 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding: 80px 20px;
-  color: #5a0270;
+  padding-top: 84px;
   position: relative;
   z-index: 1;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 .section-title {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 58px;
+  --stroke-color: #c91ae8;
+  --stroke-width: 2px;
+
+  font-family: var(--font-family);
+  margin-bottom: 56px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 50;
   color: #ffffff;
-  text-shadow: -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple,
-  1px 1px 0 purple, -2px 0 0 purple, 2px 0 0 purple, 0 -2px 0 purple,
-  0 2px 0 purple;
+  text-shadow: var(--stroke-width) 0 0 var(--stroke-color),
+    calc(var(--stroke-width) * -1) 0 0 var(--stroke-color),
+    0 var(--stroke-width) 0 var(--stroke-color),
+    0 calc(var(--stroke-width) * -1) 0 var(--stroke-color);
+}
+
+.smooth-16 {
+  text-shadow: calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * 0.3827) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * 0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * 0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0) calc(var(--stroke-width) * 1) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * 0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * 0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * 0.3827) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -1) calc(var(--stroke-width) * 0) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * -0.3827) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * -0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * -0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0) calc(var(--stroke-width) * -1) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * -0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * -0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * -0.3827) 0
+      var(--stroke-color);
 }
 
 .benefits-content {
@@ -96,6 +131,12 @@
   list-style: none;
   padding-left: 0;
 }
+.benefits-list-item {
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+  font-size: 18px;
+}
 
 .benefits-list li {
   margin-bottom: 12px;
@@ -111,7 +152,7 @@
   left: 0;
 }
 
-/* 📱 Мобільна адаптація — до 768px */
+/* Mobile — 768px */
 @media (max-width: 768px) {
   .section-title {
     font-size: 28px;
@@ -145,7 +186,7 @@
   }
 }
 
-/* 📱 Мінімальні мобільні — до 400px */
+/* Min mobile — 400px */
 @media (max-width: 400px) {
   .container {
     padding: 0 10px;
