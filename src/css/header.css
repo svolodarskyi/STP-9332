@@ -1,0 +1,28 @@
+.wrapper-header {
+  padding: 24px 43px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo-img {
+  height: 68px;
+  width: 68px;
+}
+
+.nav-list {
+  padding-inline: clamp(12px, 8vw, 109.5px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+  row-gap: 24px;
+}
+.nav-item {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--text-color);
+}
