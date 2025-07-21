@@ -132,50 +132,8 @@
   box-shadow: 0 0 11px 0 var(--stroke-for-title);
 }
 
-.hero-img-main {
-  z-index: 3;
-  width: 395px;
-}
 
-.hero-img-left {
-  z-index: 2;
-  width: 205px;
-  height: 326px;
-  left: 25px;
-  transform: rotate(-14deg);
-}
 
-.hero-img-right {
-  z-index: 2;
-  width: 205px;
-  height: 326px;
-  right: 60px;
-  transform: rotate(14deg);
-}
-
-@media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-  }
-  .hero-content-text,
-  .hero-content-image {
-    max-width: 100%;
-    flex: 1 1 100%;
-  }
-
-  .hero-img-main {
-    margin-top: 40px;
-  }
-
-  .hero-img-left,
-  .hero-img-right {
-    display: none;
-  }
-  /* .hero-img-main {
-    max-width: 100%;
-    width: 100%;
-  } */
-}
 
 .download-btn {
   flex-basis: auto;
