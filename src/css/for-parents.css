@@ -122,3 +122,8 @@
   height: 22px;
   flex-shrink: 0;
 }
+
+.parents-img {
+  box-shadow: 0 0 12px 0 var(--stroke-for-title);
+  border-radius: 24px;
+}
