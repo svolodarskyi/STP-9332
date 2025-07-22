@@ -1,0 +1,157 @@
+.download {
+  margin-top: 84px;
+}
+.download-title {
+  --stroke-color: #c91ae8;
+  --stroke-width: 2px;
+
+  font-family: var(--font-family);
+  margin-bottom: 56px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 50;
+  color: #ffffff;
+  text-shadow: var(--stroke-width) 0 0 var(--stroke-color),
+    calc(var(--stroke-width) * -1) 0 0 var(--stroke-color),
+    0 var(--stroke-width) 0 var(--stroke-color),
+    0 calc(var(--stroke-width) * -1) 0 var(--stroke-color);
+}
+
+.smooth-16 {
+  text-shadow: calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * 0.3827) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * 0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * 0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0) calc(var(--stroke-width) * 1) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * 0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * 0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * 0.3827) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -1) calc(var(--stroke-width) * 0) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * -0.3827) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * -0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * -0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0) calc(var(--stroke-width) * -1) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * -0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * -0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * -0.3827) 0
+      var(--stroke-color);
+}
+
+.download-content {
+  display: flex;
+  gap: 24px;
+}
+
+.download-content-text,
+.download-content-image {
+  flex: 1 1 50%;
+  max-width: 50%;
+  min-width: 0;
+}
+
+.download-content-text {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.download-subheader {
+  margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--text-color);
+}
+
+.download-description {
+  margin-bottom: 32px;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  max-width: 422px;
+  color: var(--text-color);
+}
+
+.download-benefits-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-bottom: 48px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.download-benefits-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.download-benefits-item svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.download-content-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-content-image {
+  position: relative;
+  width: 100%;
+  display: flex; /* or block – just for layout ease */
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; /* adjust as needed */
+}
+
+.download-img {
+  position: relative;
+  border-radius: 24px;
+  box-shadow: 0 0 11px 0 var(--stroke-for-title);
+}
+
+
+
+
+.download-btn {
+  flex-basis: auto;
+  border: 1px solid #d8a323;
+  border-radius: 12px;
+  padding: 22.5px 28.4px;
+  max-width: 508px;
+  height: 68px;
+
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: clamp(14px, 1.8vw, 20px);
+  color: var(--text-color);
+
+  box-shadow: inset 0 2px 30px 0 rgba(215, 105, 37, 0.81);
+  background: #f7f450;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
