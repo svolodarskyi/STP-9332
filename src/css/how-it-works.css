@@ -141,6 +141,10 @@
 .puzzle-img-3 {
   bottom: 135px;
   left: 20px;
+
+  border: 1px solid var(--text-color);
+  border-radius: 0 0 0 24px;
+  box-shadow: 0 0 12px 0 var(--stroke-for-title);
 }
 
 .puzzle-img-4 {
@@ -167,4 +171,95 @@
   position: absolute;
   bottom: 80px;
   right: 60px;
+}
+
+@media (max-width: 320px) {
+  .how-it-works {
+    padding-top: 30px;
+  }
+
+  .how-it-works-stroke-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    --stroke-width: 2px;
+    margin-bottom: 32px;
+  }
+
+  .how-it-works-subheader {
+    font-size: 18px;
+  }
+
+  .how-it-works-description {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .how-it-works-list {
+    font-size: 16px;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .how-it-works-content {
+    gap: 32px;
+    flex-direction: column;
+  }
+
+  .how-it-works-text {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+
+  .puzzle-img-1 {
+    left: 50px;
+    top: 0;
+    width: 110px;
+    height: 97px;
+  }
+
+  .puzzle-img-2 {
+    top: 0;
+    right: 0;
+    width: 110px;
+    height: 97px;
+  }
+
+  .puzzle-img-3 {
+    bottom: 85px;
+    left: 0;
+    width: 110px;
+    height: 97px;
+  }
+
+  .puzzle-img-4 {
+    bottom: 77px;
+    right: 40px;
+    width: 110px;
+    height: 97px;
+  }
+
+  .image-showcase {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    margin-bottom: -40px;
+  }
+
+  .arrow-icon1 {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 5px;
+    top: 38px;
+  }
+
+  .arrow-icon2 {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 35px;
+    right: 80px;
+  }
 }
