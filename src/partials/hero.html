@@ -36,25 +36,75 @@
             src="../img/img-desktop-dev/logos_google-play-icon.png"
             alt="android icon"
           />
-          Download for Free – Available on Google Play
+          <a
+            href="https://play.google.com/store/apps/details?id=com.moregames.quadpuzzleunicorns&hl=en&gl=us"
+          >
+            Download for Free – Available on Google Play</a
+          >
         </button>
       </div>
       <div class="hero-content-image">
-        <img
-          class="hero-img hero-img-left"
-          src="/img/img-desktop-dev/img-hero1x.png"
-          alt=""
-        />
-        <img
-          class="hero-img hero-img-main"
-          src="/img/img-desktop-dev/img-hero1x.png"
-          alt=""
-        />
-        <img
-          class="hero-img hero-img-right"
-          src="/img/img-desktop-dev/img-hero1x.png"
-          alt=""
-        />
+        <picture>
+          <source
+            srcset="
+              /img/img-mob-dev/img-hero1x.png 1x,
+              /img/img-mob-dev/img-hero2x.png 2x
+            "
+            media="(max-width: 320px)"
+          />
+          <source
+            srcset="
+              /img/img-desktop-dev/img-hero1x.png 1x,
+              /img/img-desktop-dev/img-hero2x.png 2x
+            "
+          />
+          <img
+            class="hero-img hero-img-left"
+            src="/img/img-desktop-dev/img-hero1x.png"
+            alt="unicorn picture"
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              /img/img-mob-dev/img-hero-mobile1x.png 1x,
+              /img/img-mob-dev/img-hero-mobile2x.png 2x
+            "
+            media="(max-width: 320px)"
+          />
+          <source
+            srcset="
+              /img/img-desktop-dev/img-hero1x.png 1x,
+              /img/img-desktop-dev/img-hero2x.png 2x
+            "
+          />
+          <img
+            class="hero-img hero-img-main"
+            src="/img/img-desktop-dev/img-hero1x.png"
+            alt="unicorn picture"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              /img/img-mob-dev/img-hero1x.png 1x,
+              /img/img-mob-dev/img-hero2x.png 2x
+            "
+            media="(max-width: 320px)"
+          />
+          <source
+            srcset="
+              /img/img-desktop-dev/img-hero1x.png 1x,
+              /img/img-desktop-dev/img-hero2x.png 2x
+            "
+          />
+          <img
+            class="hero-img hero-img-right"
+            src="/img/img-desktop-dev/img-hero1x.png"
+            alt="unicorn picture"
+          />
+        </picture>
       </div>
     </div>
   </div>

@@ -53,7 +53,7 @@
   text-align: left;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .privacy-policy-container {
     padding: 20px 25px;
     margin: 10px;
@@ -66,4 +66,4 @@
   .privacy-policy-section-title {
     font-size: 1.2em;
   }
-}
+} */

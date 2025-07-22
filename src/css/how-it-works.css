@@ -97,10 +97,10 @@
   gap: 12px;
 }
 
-.how-it-works-benefits-item svg {
+.how-it-works-item svg {
   width: 22px;
   height: 22px;
-  flex: 0 0 22px;
+  flex-shrink: 0;
 }
 
 .image-showcase {
