@@ -67,7 +67,7 @@
 }
 
 .download-content-text {
- flex: 1;
+  flex: 1;
   min-width: 280px;
 }
 
@@ -99,7 +99,6 @@
   color: var(--text-color);
   list-style: none;
   padding: 0;
-
 }
 
 .download-benefits-item {
@@ -115,7 +114,7 @@
 }
 
 .download-content-image {
-   flex: 1;
+  flex: 1;
   min-width: 280px;
   display: flex;
   flex-direction: column;
@@ -133,7 +132,6 @@
   align-items: center;
   min-height: 400px; /* adjust as needed */
 }
-
 
 .download-btn {
   flex-basis: auto;
@@ -158,7 +156,27 @@
 
 @media (max-width: 320px) {
   .download-title {
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  .download-subheader {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--text-color);
+  }
+
+  .download-description {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-color);
+  }
+
+  .download-benefits-list {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-color);
   }
 
   .download-btn {
