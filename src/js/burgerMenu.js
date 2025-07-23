@@ -1,11 +1,30 @@
-const openBtnEl = document.querySelector('[data-action="open"]');
-const closeBtnEl = document.querySelector('[data-action="close"]');
-const burgerMenuEl = document.querySelector('[data-visible]');
+const burgerBtn = document.querySelector('.burger-btn');
+const modal = document.getElementById('modal');
+const modalContainer = modal.querySelector('.modal-container');
+const closeBtn = document.getElementById('close-btn');
 
-openBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'open';
+const mobileLinks = document.querySelectorAll('.mobile-menu-link');
+
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    modal.classList.remove('active');
+    modalContainer.classList.remove('active');
+  });
 });
 
-closeBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'close';
+burgerBtn.addEventListener('click', () => {
+  modal.classList.add('active');
+  modalContainer.classList.add('active');
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('active');
+  modalContainer.classList.remove('active');
+});
+
+window.addEventListener('click', e => {
+  if (e.target === modal) {
+    modal.classList.remove('active');
+    modalContainer.classList.remove('active');
+  }
 });

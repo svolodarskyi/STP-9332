@@ -12,10 +12,16 @@
 }
 
 body {
-  background-image: url('../img/img-desktop-dev/back-desctop1x.png');
+  background-image: url('/img/img-desktop-dev/back-desctop1x.png');
   background-repeat: repeat;
   background-attachment: scroll;
   background-size: cover;
   background-position: top center;
   height: 6000px;
+}
+
+@media (max-width: 320px) {
+  body {
+    background-image: url('/img/img-mob-dev/BackMobile1px.png');
+  }
 }
