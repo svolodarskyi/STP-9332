@@ -1,16 +1,17 @@
 .hero {
-  padding-top: 84px;
+  padding-top: 30px;
 }
+
 .header-stroke-text {
   --stroke-color: #c91ae8;
-  --stroke-width: 4px;
+  --stroke-width: 2px;
 
   font-family: var(--font-family);
-  margin-bottom: 56px;
+  margin-bottom: 24px;
   text-align: center;
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 58px;
+  line-height: 36px;
   color: #ffffff;
   text-shadow: var(--stroke-width) 0 0 var(--stroke-color),
     calc(var(--stroke-width) * -1) 0 0 var(--stroke-color),
@@ -55,13 +56,14 @@
 
 .hero-content {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 0;
 }
 
 .hero-content-text,
 .hero-content-image {
-  flex: 1 1 50%;
-  max-width: 50%;
+  flex: 1 1 100%;
+  max-width: 100%;
   min-width: 0;
 }
 
@@ -76,15 +78,15 @@
   margin-bottom: 16px;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 32px;
+  font-size: 18px;
   color: var(--text-color);
 }
 
 .hero-description {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   font-family: var(--second-family);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   max-width: 422px;
   color: var(--text-color);
 }
@@ -92,11 +94,11 @@
 .hero-benefits-list {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
-  margin-bottom: 48px;
+  row-gap: 12px;
+  margin-bottom: 32px;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--text-color);
 }
 
@@ -131,114 +133,102 @@
   width: 395px;
 }
 
-.hero-img-left {
-  position: absolute;
-  z-index: 1;
-  width: 205px;
-  height: 326px;
-  left: 30px;
-  top: 40px;
-  transform: rotate(-14deg);
-}
-
+.hero-img-left,
 .hero-img-right {
-  position: absolute;
-  z-index: 1;
-  width: 205px;
-  height: 326px;
-  right: 40px;
-  bottom: 50px;
-  transform: rotate(14deg);
+  display: none;
 }
 
 .hero-download-btn {
   flex-basis: auto;
   border: 1px solid #d8a323;
   border-radius: 12px;
-  padding: 22.5px 28.4px;
+  padding: 22.5px 12px;
   max-width: 508px;
-  height: 68px;
+  height: 52px;
 
   font-family: var(--third-family);
   font-weight: 500;
-  font-size: clamp(14px, 1.8vw, 20px);
+  font-size: 10px;
   color: var(--text-color);
 
   box-shadow: inset 0 2px 30px 0 rgba(215, 105, 37, 0.81);
   background: #f7f450;
 
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
+  margin-bottom: 40px;
 }
 
-@media (max-width: 400px) {
-  .hero-img-right .hero-img-left {
-    display: none;
-  }
+.hero-download-btn img {
+  width: 28px;
+  height: 32px;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 1200px) {
   .hero {
-    padding-top: 30px;
+    padding-top: 60px;
   }
 
   .header-stroke-text {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    --stroke-width: 2px;
-    margin-bottom: 32px;
+    font-size: 48px;
+    line-height: 58px;
+    --stroke-width: 4px;
+    margin-bottom: 56px;
   }
 
   .hero-subheader {
-    font-size: 18px;
+    font-size: 32px;
   }
 
   .hero-description {
-    font-weight: 500;
-    font-size: 16px;
-    margin-bottom: 24px;
-  }
-  .hero-benefits-list {
-    font-size: 16px;
-    gap: 12px;
+    font-size: 18px;
     margin-bottom: 32px;
   }
 
+  .hero-benefits-list {
+    font-size: 20px;
+    row-gap: 24px;
+    margin-bottom: 48px;
+  }
+
   .hero-download-btn {
-    padding-inline: 12px;
-    gap: 8px;
-    font-size: 10px;
-    margin-bottom: 40px;
+    font-size: clamp(14px, 1.8vw, 20px);
+    padding: 22.5px 28.4px;
+    gap: 10px;
+    margin-bottom: 0;
+    height: 68px;
   }
 
   .hero-content {
-    gap: 0;
+    flex-direction: row;
+    gap: 24px;
   }
 
-  .hero-download-btn img {
-    width: 28px;
-    height: 32px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-  }
   .hero-content-text,
   .hero-content-image {
-    max-width: 100%;
-    flex: 1 1 100%;
+    flex: 1 1 50%;
+    max-width: 50%;
   }
 
   .hero-img-left,
   .hero-img-right {
-    display: none;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 205px;
+    height: 326px;
   }
-  /* .hero-img-main {
-    max-width: 100%;
-    width: 100%;
-  } */
+
+  .hero-img-left {
+    left: 30px;
+    top: 40px;
+    transform: rotate(-14deg);
+  }
+
+  .hero-img-right {
+    right: 40px;
+    bottom: 50px;
+    transform: rotate(14deg);
+  }
 }

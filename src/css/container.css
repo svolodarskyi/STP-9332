@@ -1,15 +1,21 @@
-/* Base styles - Desktop first */
 .container {
-  width: 100%;
-  max-width: 1200px;
+  width: 320px;
   margin: 0 auto;
-  padding: 0 80px;
+  padding: 0 16px;
 }
 
-/* Mobile styles - override for small screens */
-@media only screen and (max-width: 375px) {
+/* .section {
+  padding: 24px 0;
+  scroll-margin-top: 80px;
+} */
+
+@media only screen and (min-width: 1200px) {
   .container {
-    max-width: 320px;
-    padding: 0 16px;
+    width: 1200px;
+    padding: 0 80px;
   }
+
+  /* .section {
+    padding: 40px 0;
+  } */
 }

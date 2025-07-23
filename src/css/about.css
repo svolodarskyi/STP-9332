@@ -1,15 +1,17 @@
 .about {
-  padding-top: 84px;
+  padding-top: 32px;
 }
+
 .about-stroke-text {
   --stroke-color: #c91ae8;
   --stroke-width: 2px;
 
   font-family: var(--font-family);
-  margin-bottom: 56px;
+  margin-bottom: 24px;
   text-align: center;
-  font-size: 40px;
-  font-weight: 50;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
   color: #ffffff;
   text-shadow: var(--stroke-width) 0 0 var(--stroke-color),
     calc(var(--stroke-width) * -1) 0 0 var(--stroke-color),
@@ -54,14 +56,22 @@
 
 .about-content {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 0;
 }
 
 .about-content-text,
 .about-content-image {
-  flex: 1 1 50%;
-  max-width: 50%;
+  flex: 1 1 auto;
+  max-width: 100%;
   min-width: 0;
+}
+
+.about-content-text {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .about-content-image {
@@ -71,32 +81,33 @@
   column-gap: 25px;
   flex-wrap: wrap;
   align-items: center;
+  order: 2;
 }
 
 .about-img {
   box-shadow: 0 0 12px 0 var(--stroke-for-title);
   border-radius: 24px;
 }
-.about-content-text {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+
+.about-img-2,
+.about-img-3,
+.about-img-4 {
+  display: none;
 }
 
 .about-subheader {
   margin-bottom: 16px;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 32px;
+  font-size: 18px;
   color: var(--text-color);
 }
 
 .about-description {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   font-family: var(--second-family);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   max-width: 422px;
   color: var(--text-color);
 }
@@ -104,10 +115,11 @@
 .about-benefits-list {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  row-gap: 12px;
+  margin-bottom: 32px;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--text-color);
 }
 
@@ -123,52 +135,46 @@
   flex-shrink: 0;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 1200px) {
   .about {
-    padding-top: 30px;
+    padding-top: 120px;
   }
 
   .about-stroke-text {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    --stroke-width: 2px;
-    margin-bottom: 32px;
+    font-size: 40px;
+    font-weight: 50;
+    margin-bottom: 56px;
   }
 
   .about-subheader {
-    font-size: 18px;
+    font-size: 32px;
   }
 
   .about-description {
-    font-weight: 500;
-    font-size: 16px;
-    margin-bottom: 24px;
-  }
-  .about-benefits-list {
-    font-size: 16px;
-    gap: 12px;
+    font-size: 18px;
     margin-bottom: 32px;
   }
 
-  .about-content {
-    gap: 0;
-    flex-direction: column;
+  .about-benefits-list {
+    font-size: 20px;
+    row-gap: 24px;
+    margin-bottom: 0;
   }
 
-  .about-content-image {
-    order: 2;
+  .about-content {
+    flex-direction: row;
+    gap: 24px;
   }
 
   .about-content-text,
   .about-content-image {
-    flex: 1 1 auto;
-    max-width: 100%;
+    flex: 1 1 50%;
+    max-width: 50%;
   }
 
   .about-img-2,
   .about-img-3,
   .about-img-4 {
-    display: none;
+    display: block;
   }
 }
