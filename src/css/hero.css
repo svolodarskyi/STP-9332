@@ -1,5 +1,5 @@
 .hero {
-  margin-top: 84px;
+  padding-top: 84px;
 }
 .header-stroke-text {
   --stroke-color: #c91ae8;
@@ -113,69 +113,42 @@
 }
 
 .hero-content-image {
+  position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hero-content-image {
-  position: relative;
-  width: 100%;
-  display: flex; /* or block – just for layout ease */
-  justify-content: center;
-  align-items: center;
-  min-height: 400px; /* adjust as needed */
-}
-
 .hero-img {
-  position: absolute;
   border-radius: 24px;
   box-shadow: 0 0 11px 0 var(--stroke-for-title);
 }
 
 .hero-img-main {
+  position: relative;
   z-index: 3;
   width: 395px;
 }
 
 .hero-img-left {
-  z-index: 2;
+  position: absolute;
+  z-index: 1;
   width: 205px;
   height: 326px;
-  left: 25px;
+  left: 30px;
+  top: 40px;
   transform: rotate(-14deg);
 }
 
 .hero-img-right {
-  z-index: 2;
+  position: absolute;
+  z-index: 1;
   width: 205px;
   height: 326px;
-  right: 60px;
+  right: 40px;
+  bottom: 50px;
   transform: rotate(14deg);
-}
-
-@media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-  }
-  .hero-content-text,
-  .hero-content-image {
-    max-width: 100%;
-    flex: 1 1 100%;
-  }
-
-  .hero-img-main {
-    margin-top: 40px;
-  }
-
-  .hero-img-left,
-  .hero-img-right {
-    display: none;
-  }
-  /* .hero-img-main {
-    max-width: 100%;
-    width: 100%;
-  } */
 }
 
 .hero-download-btn {
@@ -197,4 +170,75 @@
   display: flex;
   gap: 10px;
   align-items: center;
+}
+
+@media (max-width: 400px) {
+  .hero-img-right .hero-img-left {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero {
+    padding-top: 30px;
+  }
+
+  .header-stroke-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    --stroke-width: 2px;
+    margin-bottom: 32px;
+  }
+
+  .hero-subheader {
+    font-size: 18px;
+  }
+
+  .hero-description {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .hero-benefits-list {
+    font-size: 16px;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .hero-download-btn {
+    padding-inline: 12px;
+    gap: 8px;
+    font-size: 10px;
+    margin-bottom: 40px;
+  }
+
+  .hero-content {
+    gap: 0;
+  }
+
+  .hero-download-btn img {
+    width: 28px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+  .hero-content-text,
+  .hero-content-image {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .hero-img-left,
+  .hero-img-right {
+    display: none;
+  }
+  /* .hero-img-main {
+    max-width: 100%;
+    width: 100%;
+  } */
 }
