@@ -157,17 +157,18 @@
   }
 
   .for-parents-content {
-    gap: 32px;
+      gap: 32px;
     flex-direction: column;
   }
 
   .for-parents-text {
     flex: 1 1 auto;
     max-width: 100%;
+    
   }
 
-  .for-parents-imgage {
-   
+  .for-parents-image {
+   flex-direction: column;
   }
 
     
