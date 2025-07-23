@@ -31,6 +31,12 @@
   display: none;
 }
 
+@media (min-width: 321px) {
+  .modal {
+    display: none;
+  }
+}
+
 @media (max-width: 320px) {
   .logo-img {
     height: 44px;
