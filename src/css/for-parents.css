@@ -127,3 +127,48 @@
   box-shadow: 0 0 12px 0 var(--stroke-for-title);
   border-radius: 24px;
 }
+
+@media (max-width: 320px) {
+  .for-parents {
+    padding-top: 30px;
+  }
+
+  .for-parents-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    --stroke-width: 2px;
+    margin-bottom: 32px;
+  }
+
+  .for-parents-subheader {
+    font-size: 18px;
+  }
+
+  .for-parents-description {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .for-parents-list {
+    font-size: 16px;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .for-parents-content {
+    gap: 32px;
+    flex-direction: column;
+  }
+
+  .for-parents-text {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+
+  .for-parents-imgage {
+   
+  }
+
+    
+}
