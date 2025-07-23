@@ -28,3 +28,22 @@ window.addEventListener('click', e => {
     modalContainer.classList.remove('active');
   }
 });
+
+const header = document.getElementById('header');
+
+function updateHeaderOnScroll() {
+  if (window.innerWidth >= 1200) {
+    if (window.scrollY > 10) {
+      header.classList.add('scrolled');
+      header.classList.remove('at-top');
+    } else {
+      header.classList.remove('scrolled');
+      header.classList.add('at-top');
+    }
+  } else {
+    header.classList.remove('scrolled');
+    header.classList.add('at-top');
+  }
+}
+
+window.addEventListener('scroll', updateHeaderOnScroll);

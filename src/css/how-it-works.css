@@ -1,15 +1,17 @@
 .how-it-works {
-  padding-top: 84px;
+  padding-top: 32px;
 }
+
 .how-it-works-stroke-text {
   --stroke-color: #c91ae8;
   --stroke-width: 2px;
 
   font-family: var(--font-family);
-  margin-bottom: 56px;
+  margin-bottom: 24px;
   text-align: center;
-  font-size: 40px;
-  font-weight: 50;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
   color: #ffffff;
   text-shadow: var(--stroke-width) 0 0 var(--stroke-color),
     calc(var(--stroke-width) * -1) 0 0 var(--stroke-color),
@@ -54,41 +56,43 @@
 
 .how-it-works-content {
   display: flex;
-  row-gap: 48px;
-  column-gap: 24px;
+  flex-direction: column;
+  gap: 32px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
 }
 
 .how-it-works-text {
-  flex: 0 1 658px;
+  flex: 1 1 auto;
+  max-width: 100%;
 }
 
 .how-it-works-subheader {
   margin-bottom: 16px;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 32px;
+  font-size: 18px;
   color: var(--text-color);
 }
 
 .how-it-works-description {
   font-family: var(--second-family);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: 24px;
   color: var(--text-color);
 }
 
 .how-it-works-list {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  gap: 12px;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 20px;
-  color: var(--text-color);
+  font-size: 16px;
   margin-bottom: 32px;
+  color: var(--text-color);
 }
 
 .how-it-works-item {
@@ -104,11 +108,13 @@
 }
 
 .image-showcase {
-  flex: 0 1 352px;
+  flex: 1 1 100%;
+  width: 100%;
+  max-width: 100%;
   position: relative;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   margin: 0 auto;
-  margin-bottom: -80px;
+  margin-bottom: -40px;
 }
 
 .image-showcase .image-row {
@@ -122,9 +128,10 @@
 }
 
 .puzzle-img-1 {
-  left: -75px;
-  top: -16px;
-
+  left: 50px;
+  top: 0;
+  width: 110px;
+  height: 97px;
   border: 1px solid var(--text-color);
   border-radius: 24px 0 0 0;
   box-shadow: 0 0 12px 0 var(--stroke-for-title);
@@ -133,23 +140,28 @@
 .puzzle-img-2 {
   top: 0;
   right: 0;
+  width: 110px;
+  height: 97px;
   border: 1px solid var(--text-color);
   border-radius: 0 24px 0 0;
   box-shadow: 0 0 12px 0 var(--stroke-for-title);
 }
 
 .puzzle-img-3 {
-  bottom: 135px;
-  left: 20px;
-
+  bottom: 85px;
+  left: 0;
+  width: 110px;
+  height: 97px;
   border: 1px solid var(--text-color);
   border-radius: 0 0 0 24px;
   box-shadow: 0 0 12px 0 var(--stroke-for-title);
 }
 
 .puzzle-img-4 {
-  bottom: 122px;
-  right: 0;
+  bottom: 77px;
+  right: 40px;
+  width: 110px;
+  height: 97px;
   border: 1px solid var(--text-color);
   border-radius: 0 0 24px 0;
   box-shadow: 0 0 12px 0 var(--stroke-for-title);
@@ -162,104 +174,91 @@
 .arrow-icon1 {
   position: absolute;
   transform: rotate(-90deg);
-  left: -125px;
-  top: 20px;
+  left: 5px;
+  top: 38px;
 }
 
 .arrow-icon2 {
   transform: rotate(180deg);
   position: absolute;
-  bottom: 80px;
-  right: 60px;
+  bottom: 35px;
+  right: 80px;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 1200px) {
   .how-it-works {
-    padding-top: 30px;
+    padding-top: 120px;
   }
 
   .how-it-works-stroke-text {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    --stroke-width: 2px;
-    margin-bottom: 32px;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 56px;
   }
 
   .how-it-works-subheader {
-    font-size: 18px;
+    font-size: 32px;
   }
 
   .how-it-works-description {
-    font-weight: 500;
-    font-size: 16px;
-    margin-bottom: 24px;
+    font-size: 18px;
   }
+
   .how-it-works-list {
-    font-size: 16px;
-    gap: 12px;
-    margin-bottom: 32px;
+    font-size: 20px;
+    gap: 24px;
   }
 
   .how-it-works-content {
-    gap: 32px;
-    flex-direction: column;
+    flex-direction: row;
+    row-gap: 48px;
+    column-gap: 24px;
   }
 
   .how-it-works-text {
-    flex: 1 1 auto;
-    max-width: 100%;
+    flex: 0 1 658px;
+  }
+
+  .image-showcase {
+    flex: 0 1 352px;
+    margin-bottom: -80px;
   }
 
   .puzzle-img-1 {
-    left: 50px;
-    top: 0;
-    width: 110px;
-    height: 97px;
+    left: -75px;
+    top: -16px;
+    width: auto;
+    height: auto;
   }
 
   .puzzle-img-2 {
     top: 0;
     right: 0;
-    width: 110px;
-    height: 97px;
+    width: auto;
+    height: auto;
   }
 
   .puzzle-img-3 {
-    bottom: 85px;
-    left: 0;
-    width: 110px;
-    height: 97px;
+    bottom: 135px;
+    left: 20px;
+    width: auto;
+    height: auto;
   }
 
   .puzzle-img-4 {
-    bottom: 77px;
-    right: 40px;
-    width: 110px;
-    height: 97px;
-  }
-
-  .image-showcase {
-    flex: 1 1 100%;
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    aspect-ratio: 1/1;
-    margin: 0 auto;
-    margin-bottom: -40px;
+    bottom: 122px;
+    right: 0;
+    width: auto;
+    height: auto;
   }
 
   .arrow-icon1 {
-    position: absolute;
-    transform: rotate(-90deg);
-    left: 5px;
-    top: 38px;
+    left: -125px;
+    top: 20px;
   }
 
   .arrow-icon2 {
-    transform: rotate(180deg);
-    position: absolute;
-    bottom: 35px;
-    right: 80px;
+    bottom: 80px;
+    right: 60px;
   }
 }
