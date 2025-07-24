@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 p:last-child {
@@ -16,8 +23,6 @@ home {
 
 ul,
 li {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 

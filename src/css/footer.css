@@ -43,6 +43,7 @@
   font-family: var(--second-family);
 }
 
+
 @media (min-width: 1200px) {
   .footer {
     height: 223px;
