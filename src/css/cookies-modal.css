@@ -1,4 +1,4 @@
-.cookies-modal {
+[data-cookie-modal] {
   position: fixed;
   top: 80px;
   left: 0;
@@ -12,13 +12,13 @@
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.cookies-modal h2 {
+[data-cookie-modal] h2 {
   font-size: 28px;
   margin-bottom: 16px;
   font-weight: 700;
 }
 
-.cookies-modal p {
+[data-cookie-modal] p {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 18px;
@@ -28,14 +28,14 @@
   line-height: 1.5;
 }
 
-.cookie-buttons {
+[data-cookie-buttons] {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.cookie-buttons button {
+[data-cookie-buttons] button {
   font-size: 16px;
   padding: 12px 24px;
   border: none;
@@ -46,90 +46,86 @@
   transition: transform 0.2s ease;
 }
 
-.accept-btn {
+[data-accept-cookies] {
   background: linear-gradient(to bottom right, #ffeb3b, #fbc02d);
   box-shadow: inset 0 2px 30px 0 var(--text-color);
   color: black;
 }
 
-.accept-btn:hover {
+[data-accept-cookies]:hover {
   background: #e81ae2;
   box-shadow: inset 0 2px 30px 0 var(--text-color);
-
   color: black;
 }
 
-.accept-btn:active {
+[data-accept-cookies]:active {
   background: #0cee35;
   box-shadow: inset 0 2px 30px 0 var(--text-color);
   transform: scale(0.98);
 }
 
-.accept-btn:focus {
+[data-accept-cookies]:focus {
   outline: 2px solid #1a237e;
   box-shadow: inset 0 2px 30px 0 var(--text-color);
   background: #0cee35;
   color: black;
 }
 
-.decline-btn {
+[data-decline-cookies] {
   background: linear-gradient(to bottom right, #304ffe, #1a237e);
   box-shadow: inset 0 2px 30px 0 var(--text-color);
   color: white;
 }
 
-.decline-btn:hover {
+[data-decline-cookies]:hover {
   background: linear-gradient(to bottom right, #ffeb3b, #fbc02d);
   box-shadow: inset 0 2px 30px 0 var(--text-color);
   color: black;
 }
 
-.decline-btn:active {
+[data-decline-cookies]:active {
   background: #0cee35;
   box-shadow: inset 0 2px 30px 0 var(--text-color);
   transform: scale(0.98);
 }
 
-.decline-btn:focus {
+[data-decline-cookies]:focus {
   outline: 2px solid #1a237e;
   box-shadow: inset 0 2px 30px 0 var(--text-color);
   background: #0cee35;
   color: black;
 }
 
-.cookie-buttons button:hover {
+[data-cookie-buttons] button:hover {
   transform: scale(1.05);
 }
 
 @media (min-width: 1200px) {
-  .cookies-modal {
-    position: fixed;
+  [data-cookie-modal] {
     top: 300px;
-    left: 0;
-    right: 0;
     padding-top: 60px;
-    padding-bottom: 88pxe;
+    padding-bottom: 88px; /* fixed typo: 88pxe → 88px */
   }
 
-  .cookies-modal h2 {
+  [data-cookie-modal] h2 {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 40px;
     color: #fff;
   }
-  .cookies-modal p {
+
+  [data-cookie-modal] p {
     width: 850px;
     margin-inline: auto;
     font-size: 32px;
   }
 
-  .accept-btn,
-  .decline-btn {
+  [data-accept-cookies],
+  [data-decline-cookies] {
     border-radius: 12px;
     padding: 16px 8px;
     width: 242px;
     height: 68px;
-
     font-weight: 500;
     font-size: 20px;
     text-transform: uppercase;
