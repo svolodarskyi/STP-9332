@@ -1,0 +1,131 @@
+/* Container logic */
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 80px;
+  }
+}
+
+/* Base styles */
+
+.terms-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  color: #000;
+}
+
+.terms-date {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+a {
+  text-decoration: underline;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration-skip-ink: none;
+  color: #4e2ffb;
+}
+
+.user-obligations {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+.third-party-links li {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4e2ffb;
+}
+
+p {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 16px 0;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.terms-footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 24px 0;
+  background: rgba(201, 26, 232, 0.5);
+  color: white;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+.footer-link {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.copyright {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .footer-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+}
