@@ -1,14 +1,9 @@
 .container {
-  box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
-/* .section {
-  padding: 24px 0;
-  scroll-margin-top: 80px;
-} */
 
 @media only screen and (min-width: 1200px) {
   .container {
@@ -16,7 +11,4 @@
     padding: 0 80px;
   }
 
-  /* .section {
-    padding: 40px 0;
-  } */
 }
