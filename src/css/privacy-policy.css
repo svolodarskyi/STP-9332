@@ -2,6 +2,8 @@
   font-family: var(--second-family);
   font-weight: 500;
   font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 24px;
 }
 .privacy-policy-title {
   color: #000;
@@ -53,17 +55,9 @@
   text-align: left;
 }
 
-/* @media (max-width: 768px) {
-  .privacy-policy-container {
-    padding: 20px 25px;
-    margin: 10px;
+@media (max-width: 1200px) {
+  .privacy-policy {
+    padding-top: 60px;
+    padding-bottom: 72px;
   }
-
-  .privacy-policy-title {
-    font-size: 1.8em;
-  }
-
-  .privacy-policy-section-title {
-    font-size: 1.2em;
-  }
-} */
+}
