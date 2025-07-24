@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/evoplay_game_info/",
+    "build": "vite build --base=/STP-9332/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview"
   },
