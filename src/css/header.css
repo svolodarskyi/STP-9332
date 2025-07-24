@@ -178,11 +178,11 @@
     z-index: 1000;
   }
 
-  header.at-top {
+  [data-header][data-at-top] {
     background: transparent;
   }
 
-  header.scrolled {
+  [data-header][data-scrolled] {
     background: #dd55f5;
   }
 
