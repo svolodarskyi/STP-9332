@@ -44,7 +44,7 @@
 }
 
 /* Desktop and larger screens */
-@media (min-width: 361px) {
+@media (min-width: 1200px) {
   .footer {
     height: 223px;
     padding: 60px 0;
