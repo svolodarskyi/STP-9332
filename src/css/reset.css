@@ -6,14 +6,8 @@
 
 *{
 	margin: 0;
-	padding: 0;
 }
 
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
 p:last-child {
   margin-bottom: 0;
@@ -22,6 +16,8 @@ p:last-child {
 ul,
 li {
   list-style: none;
+  margin: 0;
+	padding: 0;
 }
 
 a {
