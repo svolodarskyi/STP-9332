@@ -20,6 +20,7 @@
   font-size: 40px;
   text-align: center;
   color: #000;
+  padding-top: 48px;
 }
 
 .terms-date {
@@ -27,6 +28,7 @@
   font-weight: 500;
   font-size: 20px;
   color: #000;
+  padding-top: 32px;
 }
 
 h2 {
@@ -34,6 +36,7 @@ h2 {
   font-weight: 500;
   font-size: 20px;
   color: #000;
+  padding-bottom: 8px;
 }
 
 ul {
@@ -43,6 +46,8 @@ ul {
 
 ul li {
   margin-bottom: 8px;
+  gap: 16px;
+  padding-top: 16px;
 }
 
 a {
@@ -74,6 +79,7 @@ p {
   font-weight: 500;
   font-size: 18px;
   color: #000;
+  margin-bottom: 24px;
 }
 
 .back-link {
