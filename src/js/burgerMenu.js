@@ -1,30 +1,29 @@
-const burgerBtn = document.querySelector('.burger-btn');
-const modal = document.getElementById('modal');
-const modalContainer = modal.querySelector('.modal-container');
-const closeBtn = document.getElementById('close-btn');
-
-const mobileLinks = document.querySelectorAll('.mobile-menu-link');
+const burgerBtn = document.querySelector('[data-burger-btn]');
+const modal = document.querySelector('[data-modal]');
+const modalContainer = modal.querySelector('[data-modal-container]');
+const closeBtn = document.querySelector('[data-close-btn]');
+const mobileLinks = document.querySelectorAll('[data-mobile-menu-link]');
 
 mobileLinks.forEach(link => {
   link.addEventListener('click', () => {
-    modal.classList.remove('active');
-    modalContainer.classList.remove('active');
+    modal.removeAttribute('data-active');
+    modalContainer.removeAttribute('data-active');
   });
 });
 
 burgerBtn.addEventListener('click', () => {
-  modal.classList.add('active');
-  modalContainer.classList.add('active');
+  modal.setAttribute('data-active', '');
+  modalContainer.setAttribute('data-active', '');
 });
 
 closeBtn.addEventListener('click', () => {
-  modal.classList.remove('active');
-  modalContainer.classList.remove('active');
+  modal.removeAttribute('data-active');
+  modalContainer.removeAttribute('data-active');
 });
 
 window.addEventListener('click', e => {
   if (e.target === modal) {
-    modal.classList.remove('active');
-    modalContainer.classList.remove('active');
+    modal.removeAttribute('data-active');
+    modalContainer.removeAttribute('data-active');
   }
 });

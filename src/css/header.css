@@ -120,12 +120,12 @@
   margin-bottom: auto;
 }
 
-.modal.active {
+[data-modal][data-active] {
   pointer-events: all;
   opacity: 1;
 }
 
-.modal-container.active {
+[data-modal-container][data-active] {
   transform: translateY(0);
 }
 
