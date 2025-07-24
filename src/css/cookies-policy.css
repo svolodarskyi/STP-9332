@@ -1,0 +1,129 @@
+/* Container logic */
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 80px;
+  }
+}
+
+/* Base styles */
+
+.cookies-policy-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  color: #000;
+}
+
+.cookies-policy-date {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+
+.cookies-subheader {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+
+.managing-cookies {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.managining-list {
+  margin-bottom: 8px;
+}
+
+.managining-list-item {
+  text-decoration: underline;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration-skip-ink: none;
+  color: #4e2ffb;
+}
+
+.use-cookies {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+
+.tipes-of-cookies {
+}
+
+.use-cookies-list {
+}
+.tipes-of-cookies-list {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.cookies-text {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 16px 0;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.cookie-policy-footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 24px 0;
+  background: rgba(201, 26, 232, 0.5);
+  color: white;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+.footer-link {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.copyright {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
