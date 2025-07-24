@@ -21,6 +21,30 @@
   font-weight: 500;
   font-size: 18px;
   color: var(--text-color);
+  transition: transform 0.2s ease;
+}
+
+.nav-item:hover {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--text-color);
+}
+
+.nav-item:focus {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--stroke-for-title);
+}
+
+.nav-item:active {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--stroke-for-title);
 }
 
 .burger-btn {
@@ -35,6 +59,19 @@
 .burger-icon {
   display: block;
   fill: black;
+  transition: transform 0.2s ease;
+}
+
+.burger-icon:hover {
+  fill: var(--presed);
+}
+
+.burger-icon:active {
+  fill: var(--stroke-for-title);
+}
+
+.burger-icon:focus {
+  fill: var(--stroke-for-title);
 }
 
 .modal {
@@ -95,6 +132,22 @@
 .close-btn {
   border: none;
   background-color: transparent;
+}
+
+.close-btn-icon {
+  transition: transform 0.2s ease;
+}
+
+.close-btn-icon:hover {
+  fill: var(--presed);
+}
+
+.close-btn-icon:active {
+  fill: var(--stroke-for-title);
+}
+
+.close-btn-icon:focus {
+  fill: var(--stroke-for-title);
 }
 
 .svg-modal-x {
